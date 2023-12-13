@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'digitaltimer';
+    src: url('fonts/digital-7.ttf') format('truetype'); 
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digtimeritalic';
+    src: url("fonts/digital-7 (italic).ttf") format('truetype'); 
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-container {
+    margin-top: 20px;
+}
+
+
+.timer-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'digitaltimer';
+    font-size: 4em;
+    border: 1px solid #ddd; 
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    margin: auto; /* Center the timer container */
+    backdrop-filter: blur(10px);
+}
+
+.timer-display {
+    font-size: 6em;
+    letter-spacing: 5px;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.8), /* Light grey box shadow on hover */
+                0 0 20px rgba(169, 169, 169, 0.6),
+                0 0 30px rgba(169, 169, 169, 0.4),
+                0 0 40px rgba(169, 169, 169, 0.2);
+    color: whitesmoke;
+    border: 1px solid transparent;
+}
+
+
+
